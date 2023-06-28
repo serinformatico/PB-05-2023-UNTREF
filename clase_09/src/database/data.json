@@ -4,5 +4,17 @@
 		"marca": "Ford",
 		"color": "Negro",
 		"anio": "2020"
+	},
+	{
+		"id": 2,
+		"marca": "Fiat",
+		"color": "Blanco",
+		"anio": "2020"
+	},
+	{
+		"id": 3,
+		"marca": "Fiat",
+		"color": "Rojo",
+		"anio": "2010"
 	}
 ]
