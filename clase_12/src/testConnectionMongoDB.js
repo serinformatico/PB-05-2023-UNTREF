@@ -1,4 +1,4 @@
-const { connectToDB, disconnectFromMongoDB } = require("./mongodb.js");
+const { connectToDB, disconnectFromMongoDB } = require('./mongodb.js');
 
 connectToDB()
     .then(() => disconnectFromMongoDB());

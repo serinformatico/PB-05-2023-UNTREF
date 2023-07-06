@@ -6,7 +6,7 @@
         "anio": 2023,
         "precio": 12500250,
         "descuento": 3.5,
-        "false": true,
+        "es_0km": true,
         "velocidad_crucero": "Control en el volante"
     },
 	{
@@ -16,7 +16,7 @@
         "anio": 2021,
         "precio": 6700000,
         "descuento": 5.0,
-        "false": true
+        "es_0km": true
 	},
 	{
         "id": 3,
