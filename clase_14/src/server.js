@@ -1,5 +1,8 @@
 const express = require('express');
 const { generateToken, verifyToken, checkRole } = require('./security.js');
+const path = require('path');
+
+require('dotenv').config({ path: path.join(__dirname, '../.env') });
 
 const server = express();
 

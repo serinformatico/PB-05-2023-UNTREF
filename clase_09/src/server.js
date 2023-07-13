@@ -1,5 +1,5 @@
-const express = require("express");
-const { findOneById, findAll, create, update, destroy } = require("./database/data.manager.js");
+const express = require('express');
+const { findOneById, findAll, create, update, destroy } = require('./database/data.manager.js');
 
 require('dotenv').config();
 

@@ -14,7 +14,7 @@ function obtenerUnNumeroAleatorioParEntre1y10ConDemora() {
 }
 
 async function obtenerUnNumeroAleatorioParEntre1y10() {
-    console.log("Procesando...");
+    console.log('Procesando...');
 
     // Se recomienda el uso de try-catch para controlar un posible error
     try {

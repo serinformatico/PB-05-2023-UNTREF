@@ -1,22 +1,20 @@
-const express = require("express");
-const data = require("./data.js");
+const express = require('express');
 
 const server = express();
 const PORT = 3000;
-const HOST = "127.0.0.1";
-const coches = data.obtenerCoches();
+const HOST = '127.0.0.1';
 
 // Configuración de la ruta coche http://127.0.0.1:3000/coche/1/color/rojo
 server.get('/coche/:id/color/:color', (request, response) => {
     // Pamámetros recibidos por URL
-    const {id, color} = req.params;
+    const { id, color } = request.params;
     response.status(200).send(`El Id ${id} recibido es y el color es ${color}`);
 });
 
 // Configuración de la ruta coche http://127.0.0.1:3000/coche?id=1&color=rojo
 server.get('/coche', (request, response) => {
     // Pamámetros recibidos por query
-    const { id, color } = req.query;
+    const { id, color } = request.query;
     response.status(200).send(`El Id ${id} recibido es y el color es ${color}`);
 });
 

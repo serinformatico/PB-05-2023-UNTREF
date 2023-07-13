@@ -1,5 +1,5 @@
-const fs = require("fs");
-const path = require("path");
+const fs = require('fs');
+const path = require('path');
 
 // Crea un nuevo directorio
 fs.mkdir(path.join(__dirname, 'archivos1'), (error) => {
@@ -37,7 +37,7 @@ fs.readdir(path.join(__dirname, 'archivos'), (error, nombres) => {
     console.log('Se ha logrado leer los nombres de los archivos correctamente');
     console.log(nombres); // nombres de archivos
 
-    fs.readFile(path.join(__dirname, "archivos", nombres[0]), "utf8", (err, contenido) => {
+    fs.readFile(path.join(__dirname, 'archivos', nombres[0]), 'utf8', (err, contenido) => {
         if (err) {
             return console.log(`Hubo un error. No se ha logrado leer el contenido del archivo ${nombres[0]}`);
         }

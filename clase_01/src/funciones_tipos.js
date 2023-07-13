@@ -11,7 +11,7 @@ const sumarConFuncionExpresadaNombrada = function sumar(numeroA, numeroB) {
 console.log(sumarConFuncionExpresadaNombrada(3, 5));
 
 // Función expresada con estructura anónima
-const sumarConFuncionExpresadaAnonima = function (numeroA, numeroB) {
+const sumarConFuncionExpresadaAnonima = function(numeroA, numeroB) {
     return numeroA + numeroB;
 };
 console.log(sumarConFuncionExpresadaAnonima(3, 5));

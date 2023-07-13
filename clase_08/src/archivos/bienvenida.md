@@ -1,4 +1,4 @@
-BIENVENIDOS AL CURSO 
+# BIENVENIDOS AL CURSO 
  
-Materia: PROGRAMACIÓN BACKEND 
-Lic. Sergio Regalado Alessi 
+- Materia: PROGRAMACIÓN BACKEND 
+***Lic. Sergio Regalado Alessi***

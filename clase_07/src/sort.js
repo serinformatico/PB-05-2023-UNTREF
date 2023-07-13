@@ -1,4 +1,4 @@
-const frutas = ["Manzana", "Naranja", "Banana", "Uva", "Ananá"];
+const frutas = ['Manzana', 'Naranja', 'Banana', 'Uva', 'Ananá'];
 
 // Uso de sort con texto ascendente (valor unicode)
 frutas.sort((a, b) => {

@@ -1,22 +1,22 @@
-const express = require("express");
-const fs = require("fs");
-const path = require("path");
+const express = require('express');
+const fs = require('fs');
+const path = require('path');
 
 const server = express();
 const PORT = 3000;
-const HOST = "127.0.0.1";
+const HOST = '127.0.0.1';
 
-const rutaDelArchivo = path.join(__dirname, "data.json");
+const rutaDelArchivo = path.join(__dirname, 'data.json');
 
 function escribirContenidoEnArchivo(contenido) {
     if (!contenido) {
-        throw new Error("Error. No se ha enviado un contenido definido");
+        throw new Error('Error. No se ha enviado un contenido definido');
     }
 
     return new Promise((resolve, reject) => {
-        fs.writeFile(rutaDelArchivo, contenido, "utf8", (error) => {
+        fs.writeFile(rutaDelArchivo, contenido, 'utf8', (error) => {
             if (error) {
-                reject(new Error("Error al escribir contenido en el archivo"));
+                reject(new Error('Error al escribir contenido en el archivo'));
             }
 
             resolve(true);
@@ -26,9 +26,9 @@ function escribirContenidoEnArchivo(contenido) {
 
 function leerContenidoDeArchivo() {
     return new Promise((resolve, reject) => {
-        fs.readFile(rutaDelArchivo, "utf8", (error, result) => {
+        fs.readFile(rutaDelArchivo, 'utf8', (error, result) => {
             if (error) {
-                reject(new Error("Error al leer el archivo"));
+                reject(new Error('Error al leer el archivo'));
             }
 
             resolve(result);

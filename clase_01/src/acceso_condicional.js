@@ -1,7 +1,7 @@
 // Declaración e instanciación o creación de un objeto persona.
 const persona = {
-    nombre: "Juan",
-    apellido: "Medina",
+    nombre: 'Juan',
+    apellido: 'Medina',
     numerosPreferidos: {
         a: 7,
         b: 10

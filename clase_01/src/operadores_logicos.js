@@ -1,6 +1,6 @@
 const persona = {
-    nombre: "Juan",
-    apellido: "Medina",
+    nombre: 'Juan',
+    apellido: 'Medina',
     edad: 17,
     esCiudadanoArgentino: false,
     esCiudadanoNaturalizado: true

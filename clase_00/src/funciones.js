@@ -1,4 +1,4 @@
-let nombre = "Juan";
+let nombre = 'Juan';
 
 function saludar(parametroNombre) {
     console.log(`Hola ${parametroNombre}`);

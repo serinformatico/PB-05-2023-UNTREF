@@ -6,9 +6,9 @@ console.log(numeroEncontrado);
 
 // Uso de find con objetos
 const personas = [
-    { id: 1, nombre: "Juan", apellido: "Pérez" },
-    { id: 2, nombre: "Mariana", apellido: "Páez" },
-    { id: 3, nombre: "Lorena", apellido: "Medina" }
+    { id: 1, nombre: 'Juan', apellido: 'Pérez' },
+    { id: 2, nombre: 'Mariana', apellido: 'Páez' },
+    { id: 3, nombre: 'Lorena', apellido: 'Medina' }
 ];
 const id = 2;
 const personaEncontrado = personas.find((objeto) => objeto.id === id, id);

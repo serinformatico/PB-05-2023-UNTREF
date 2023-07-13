@@ -1,4 +1,4 @@
-let nombre = "Juan";
+let nombre = 'Juan';
 let edad = 22;
 
 if (nombre) {
@@ -8,5 +8,5 @@ if (nombre) {
         console.log(`${nombre} es menor de edad`);
     }
 } else {
-    console.log("Falta el nombre");
+    console.log('Falta el nombre');
 }

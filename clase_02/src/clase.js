@@ -1,5 +1,4 @@
 class Persona {
-
     // Propiedades privadas
     #nombre;
     #apellido;
@@ -19,15 +18,20 @@ class Persona {
     }
 
     // Getter & Setter
-    get apellido() { return this.#apellido; }
-    set apellido(apellido) { this.#apellido = apellido.toUpperCase(); }
+    get apellido() {
+        return this.#apellido;
+    }
+
+    set apellido(apellido) {
+        this.#apellido = apellido.toUpperCase();
+    }
 }
 
 // Instanciación o creación de un objeto de la clase Persona
-const martin = new Persona("Martín", "Pérez", "Tincho", 14);
+const martin = new Persona('Martín', 'Pérez', 'Tincho', 14);
 
-console.log(martin);              // Imprime solo las propiedades públicas
-console.log(martin.saludar());    // Imprime "Hola. Soy Martín pero me dicen Tincho"
+console.log(martin); // Imprime solo las propiedades públicas
+console.log(martin.saludar()); // Imprime 'Hola. Soy Martín pero me dicen Tincho'
 
-martin.apellido = "Romero";     // Setter: Modifica el apellido
-console.log(martin.apellido);   // Getter: Imprime "Romero"
+martin.apellido = 'Romero'; // Setter: Modifica el apellido
+console.log(martin.apellido); // Getter: Imprime 'Romero'

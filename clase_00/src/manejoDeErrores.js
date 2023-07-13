@@ -7,7 +7,7 @@ try {
     if (divisor !== 0) {
         console.log(dividiendo / divisor);
     } else {
-        throw new Error("No se puede dividir por cero");
+        throw new Error('No se puede dividir por cero');
     }
 } catch (error) {
     console.error(error.message);

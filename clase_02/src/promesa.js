@@ -1,5 +1,5 @@
 function obtenerUnNumeroAleatorioParEntre1y10() {
-    console.log("Procesando...");
+    console.log('Procesando...');
 
     return new Promise((resolve, reject) => {
         const numeroAleatorioEntre1y10 = Math.floor(Math.random() * 10);
@@ -18,7 +18,7 @@ function obtenerUnNumeroAleatorioParEntre1y10() {
 obtenerUnNumeroAleatorioParEntre1y10()
     .then((result) => console.log(result))
     .catch((error) => console.log(error.message))
-    .finally(() => console.log("Proceso terminado"));
+    .finally(() => console.log('Proceso terminado'));
 
 // El siguiente consolo.log está mal definido. Esto imprimiría
 // Promise { <pending> } y no nos arrojaría un error.

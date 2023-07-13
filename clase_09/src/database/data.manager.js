@@ -1,12 +1,12 @@
-const fs   = require("fs");
-const path = require("path");
+const fs = require('fs');
+const path = require('path');
 
-const ruta = path.join(__dirname, "data.json");
+const ruta = path.join(__dirname, 'data.json');
 
 function escribir(contenido) {
     return new Promise((resolve, reject) => {
-        fs.writeFile(ruta, JSON.stringify(contenido, null, "\t"), "utf8", (error) => {
-            if (error) reject(new Error("Error. No se puede escribir"));
+        fs.writeFile(ruta, JSON.stringify(contenido, null, '\t'), 'utf8', (error) => {
+            if (error) reject(new Error('Error. No se puede escribir'));
 
             resolve(true);
         });
@@ -15,8 +15,8 @@ function escribir(contenido) {
 
 function leer() {
     return new Promise((resolve, reject) => {
-        fs.readFile(ruta, "utf8", (error, result) => {
-            if (error) reject(new Error("Error. No se puede leer"));
+        fs.readFile(ruta, 'utf8', (error, result) => {
+            if (error) reject(new Error('Error. No se puede leer'));
 
             resolve(JSON.parse(result));
         });
@@ -36,12 +36,12 @@ function generarId(coches) {
 }
 
 async function findOneById(id) {
-    if (!id) throw new Error("Error. El Id está indefinido.");
+    if (!id) throw new Error('Error. El Id está indefinido.');
 
     const coches = await leer();
-    const coche  = coches.find((element) => element.id === id);
+    const coche = coches.find((element) => element.id === id);
 
-    if (!coche) throw new Error("Error. El Id no corresponde a un coche en existencia.");
+    if (!coche) throw new Error('Error. El Id no corresponde a un coche en existencia.');
 
     return coche;
 }
@@ -52,7 +52,7 @@ async function findAll() {
 }
 
 async function create(coche) {
-    if (!coche?.marca || !coche?.color || !coche?.anio) throw new Error("Error. Datos incompletos.");
+    if (!coche?.marca || !coche?.color || !coche?.anio) throw new Error('Error. Datos incompletos.');
 
     let coches = await leer();
     const cocheConId = { id: generarId(coches), ...coche };
@@ -64,12 +64,12 @@ async function create(coche) {
 }
 
 async function update(coche) {
-    if (!coche?.id || !coche?.marca || !coche?.color || !coche?.anio) throw new Error("Error. Datos incompletos.");
+    if (!coche?.id || !coche?.marca || !coche?.color || !coche?.anio) throw new Error('Error. Datos incompletos.');
 
-    let coches   = await leer();
+    let coches = await leer();
     const indice = coches.findIndex((element) => element.id === coche.id);
 
-    if (indice < 0) throw new Error("Error. El Id no corresponde a un coche en existencia.");
+    if (indice < 0) throw new Error('Error. El Id no corresponde a un coche en existencia.');
 
     coches[indice] = coche;
     await escribir(coches);
@@ -78,12 +78,12 @@ async function update(coche) {
 }
 
 async function destroy(id) {
-    if (!id) throw new Error("Error. El Id está indefinido.");
+    if (!id) throw new Error('Error. El Id está indefinido.');
 
-    let coches   = await leer();
+    let coches = await leer();
     const indice = coches.findIndex((element) => element.id === id);
 
-    if (indice < 0) throw new Error("Error. El Id no corresponde a un coche en existencia.");
+    if (indice < 0) throw new Error('Error. El Id no corresponde a un coche en existencia.');
 
     const coche = coches[indice];
     coches.splice(indice, 1);
