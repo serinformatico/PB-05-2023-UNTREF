@@ -33,5 +33,5 @@ server.on('request', (request) => {
     }
 });
 
-// Método oyente de peteciones
+// Método oyente de solicitudes
 server.listen(PORT, HOST, () => console.log(`run en http://${HOST}:${PORT}/ejemplo`));

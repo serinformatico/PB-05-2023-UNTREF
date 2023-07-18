@@ -2,7 +2,7 @@ const { MongoClient } = require('mongodb');
 const path = require('path');
 
 // Se establece manualmente la ubicación del archivo .env
-require('dotenv').config({ path: path.join(__dirname, '../.env') });
+require('dotenv').config({ path: path.join(__dirname, '.env') });
 
 const client = new MongoClient(process.env.DATABASE_URL);
 

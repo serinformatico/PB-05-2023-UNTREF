@@ -16,5 +16,5 @@ server.use('*', (request, response) => {
     response.status(404).send(`<h1>Error 404</h1><h3>La URL indicada no existe en este servidor</h3>`);
 });
 
-// Método oyente de peteciones
+// Método oyente de solicitudes
 server.listen(PORT, HOST, () => console.log(`Ejecutandose en http://${HOST}:${PORT}`));
