@@ -48,7 +48,7 @@ Para instalar y ejecutar el proyecto, sigue estos pasos:
     ```
 
 ### Profile de Visual Studio Code (VSC)
-Un "**profile**" es una configuración personalizada diseñada específicamente para el desarrollo de aplicaciones backend utilizando **JavaScript**. Este perfil incluye una serie de ajustes predefinidos, extensiones, configuraciones de entorno, y herramientas optimizadas para mejorar la productividad y eficiencia del desarrollador al gestionar proyectos backend. Este perfil se encuentra en el archivo **Backend-JS.code-profile**, el cual se tiene que importar desde **VSC** *(Archivo->Preferencias->Perfil->Importar perfil...)* o en ingles *(File->Preferences->Profile->Import Profile...)*
+Un "**profile**" es una configuración personalizada diseñada específicamente para el desarrollo de aplicaciones backend utilizando **JavaScript**. Este perfil incluye una serie de ajustes predefinidos, extensiones, configuraciones de entorno, y herramientas optimizadas para mejorar la productividad y eficiencia del desarrollador al gestionar proyectos backend. Este perfil se encuentra en el archivo **backend.code-profile**, el cual se tiene que importar desde **VSC** *(Archivo->Preferencias->Perfil->Importar perfil...)* o en ingles *(File->Preferences->Profile->Import Profile...)*
 
 
 ### ¿Te ha gustado este proyecto?
